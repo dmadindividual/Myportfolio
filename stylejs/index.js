@@ -162,3 +162,17 @@ window.addEventListener('load', () => {
 const time = ['1', '2', '3', '4', '5' ]
 let TimeOut = ['5', '6', '', '4', '5' ]
 
+            function checkScreenWidth() {
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Set the minimum width for PC (you can adjust this value as needed)
+    const minPCWidth = 768;
+
+    // Check if the screen width is less than the minimum PC width
+    if (screenWidth < minPCWidth) {
+        // Redirect to a different page or display an error message
+        // Here, we are redirecting to a page indicating that the screen size is not suitable for PC
+        window.location.href = "notpc.html";
+    }
+}
+
