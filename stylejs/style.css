@@ -13,6 +13,8 @@ html {
 body {
   font-family: "Roboto Mono", cursive;
   color: white;
+  max-width: 1200px; /* Set your desired maximum width */
+  margin: 0 auto;
 }
 
 :root {
